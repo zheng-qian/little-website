@@ -1,0 +1,150 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	border: none;  /* 在ie中才会显示出来 */
+	vertical-align: middle;
+}
+a{
+	text-decoration: none;
+	color: #3c3c3c;
+}
+i{
+	font-style: normal;
+}
+input,
+button{
+	margin: 0;
+	padding: 0;
+}
+button{
+	outline: none;
+}
+table{
+	border-collapse: collapse; /* 边框模式，合并的模式 */
+}
+th,td{
+	padding: 0;
+}
+body{
+	font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;  /* 1.5是行高，\5b8b\4f53是Unicode编码 */
+	/* 行高可以用normal,数字，百分比，像素，1.5em表示，但大企业偏向喜欢数字，因为使用数字后面的子元素都会继承相应的倍数，而用百分比等则是继承父元素乘以相应的倍数的值 */
+	/* 
+		后面的都是字体   Unicode编码'\5b8b\4f53'代表的是宋体==\u5B8B\u4F53 
+		宋体：宋朝随着活字印刷术而出现，明朝改良后才叫宋体
+		font-family:'宋体';
+		font-family:'\5b8b\4f53';
+		font-family:Simsun;
+
+		font-family:"微软雅黑";
+		font-family:Microsoft YaHei;
+	 */
+	color: #3c3c3c;
+	background-color:#f4f4f4;
+}
+
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.layer{
+	width: 1190px;
+	margin: 0 auto;
+}
+
+.c4{
+	color: #f40;
+}
+
+.c5{
+	color: #f05;
+}
+
+.c6{
+	color: #8d7afb;
+}
+.c7{
+	columns: #a8c001;
+}
+.mr7{
+	margin-right: 5px;
+}
+.mr7{
+	margin-right: 7px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mr10{
+	margin-right: 10px;
+}
+
+    #main .banner-slide{
+        position: absolute;
+        width: 960px;
+        height: 480px; 
+        overflow: hidden;
+        display:none;
+    }
+    #main .slide-active{
+        display: block;
+    }
+    #main .slide1{
+        background: url("https://img.alicdn.com/imgextra/i2/6000000003225/O1CN01mYQhmj1Zh5wWns219_!!6000000003225-0-octopus.jpg") no-repeat;
+    }
+    #main .slide2{
+        background: url("https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg") no-repeat;
+    }
+    #main .slide3{
+        background: url("https://aecpm.alicdn.com/simba/img/TB1JNHwKFXXXXafXVXXSutbFXXX.jpg") no-repeat;
+    }
+    #main .slide4{
+        background: url("https://aecpm.alicdn.com/simba/img/TB183NQapLM8KJjSZFBSutJHVXa.jpg") no-repeat;
+    }
+    #main .slide5{
+        background: url("https://img.alicdn.com/imgextra/i1/6000000004482/O1CN013h31Jt1iynnYYc2Lg_!!6000000004482-0-octopus.jpg") no-repeat;
+    }
+    #main .circle #dots{
+        position: absolute;
+        width: 240px;
+        height: 16px;
+        bottom:20px;
+        left:400px;
+    }
+    #main .circle #dots li{
+        float:left;
+        border:1px solid #fff;
+        width:16px;
+        height:16px;
+        margin-right:10px;
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        background:#fff;
+        cursor:pointer;
+    }
+    #main .circle #dots .li1,
+    #main .circle #dots li:hover{
+        background-color: #174799;
+    }
+
