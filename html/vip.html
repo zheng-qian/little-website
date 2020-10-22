@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title>在线直播</title>
     <link rel="stylesheet" type="text/css" href="../css/vip.css"/>
+    <script  src="../js/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
@@ -17,34 +18,34 @@
         </div>
         <div class="centers"><!--接口自行修改-->
             <select class="sel" onchange="xuanzejiekou(this)">
-                <option value="http://88wx.pw/duo.php?url=" style="color:red">请选择接口</option>
-                <option value="http://jx.598110.com/index.php?url=">1号通用接口</option>            
-                <option value="http://jqaaa.com/jx.php?url=">2号通用接口</option>
-                <option value="http://okjx.cc/?url=">OK视频</option>
-                <option value="http://jx.598110.com/zuida.php?url=">4号通用接口</option>
-                <option value="http://jx.598110.com/duo/index.php?url=">5号通用接口</option>
+                <option value="https://88wx.pw/duo.php?url=" style="color:red">请选择接口</option>
+                <option value="https://jx.598110.com/index.php?url=">1号通用接口</option>            
+                <option value="https://jqaaa.com/jx.php?url=">2号通用接口</option>
+                <option value="https://okjx.cc/?url=">OK视频</option>
+                <option value="https://jx.598110.com/zuida.php?url=">4号通用接口</option>
+                <option value="https://jx.598110.com/duo/index.php?url=">5号通用接口</option>
                 <option value="https://vip.mpos.ren/v/?url=">视频解析</option>            
-                <option value="http://www.82190555.com/video.php?url=">无名小站</option>
+                <option value="https://www.82190555.com/video.php?url=">无名小站</option>
                 <option value="https://jx.618g.com/?url=">穷二代视频</option>
-                <option value="http://jiexi.071811.cc/jx.php?url=">人人解析</option>
-                <option value="http://jx.598110.com/?url=">通用视频</option>
-                <option value="http://jx.598110.com/index.php?url=">会员K云</option>
-                <option value="http://17kyun.com/api.php?url=">618解析</option>
+                <option value="https://jiexi.071811.cc/jx.php?url=">人人解析</option>
+                <option value="https://jx.598110.com/?url=">通用视频</option>
+                <option value="https://jx.598110.com/index.php?url=">会员K云</option>
+                <option value="https://17kyun.com/api.php?url=">618解析</option>
                 <option value="https://beaacc.com/api.php?url=">万能接口1</option>
-                <option value="http://y.mt2t.com/lines?url=">万能接口2</option> 
-                <option value="http://jiexi.071811.cc/jx2.php?url=">万能接口3</option>
-                <option value="http://www.xnflv.com/xnflv/index.php?url=">万能接口4</option>
-                <option value="http://api.91exp.com/svip/?url=">万能接口5</option>
-                <option value="http://player.jidiaose.com/supapi/iframe.php?v=">万能接口6</option>
-                <option value="http://www.82190555.com/index/qqvod.php?url=">腾讯视频接口1</option>   
-                <option value="http://api.pucms.com/?url=">爱奇艺超清接口1</option>
-                <option value="http://api.baiyug.cn/vip/index.php?url=">爱奇艺超清接口2</option>
+                <option value="https://y.mt2t.com/lines?url=">万能接口2</option> 
+                <option value="https://jiexi.071811.cc/jx2.php?url=">万能接口3</option>
+                <option value="https://www.xnflv.com/xnflv/index.php?url=">万能接口4</option>
+                <option value="https://api.91exp.com/svip/?url=">万能接口5</option>
+                <option value="https://player.jidiaose.com/supapi/iframe.php?v=">万能接口6</option>
+                <option value="https://www.82190555.com/index/qqvod.php?url=">腾讯视频接口1</option>   
+                <option value="https://api.pucms.com/?url=">爱奇艺超清接口1</option>
+                <option value="https://api.baiyug.cn/vip/index.php?url=">爱奇艺超清接口2</option>
                 <option value="https://api.flvsp.com/?url=">爱奇艺超清接口3</option>
-                <option value="http://api.xfsub.com/index.php?url=">芒果TV超清接口</option>
-                <option value="http://65yw.2m.vc/chaojikan.php?url=">芒果TV手机接口</option>
-                <option value="http://www.82190555.com/index/qqvod.php?url=">优酷超清接口</option>
-                <option value="http://vip.jlsprh.com/index.php?url=">搜狐视频接口</option>
-                <option value="http://2gty.com/apiurl/yun.php?url=">乐视视频接口</option>
+                <option value="https://api.xfsub.com/index.php?url=">芒果TV超清接口</option>
+                <option value="https://65yw.2m.vc/chaojikan.php?url=">芒果TV手机接口</option>
+                <option value="https://www.82190555.com/index/qqvod.php?url=">优酷超清接口</option>
+                <option value="https://vip.jlsprh.com/index.php?url=">搜狐视频接口</option>
+                <option value="https://2gty.com/apiurl/yun.php?url=">乐视视频接口</option>
             </select>
             <div class="search">
                 <div class="from">
@@ -54,34 +55,34 @@
                 </div>
             </div>
             <div id="ckplays">
-                <iframe id="jiekou" name="jiekou" src="http://jx.598110.com/index.php?url=https://www.iqiyi.com/v_19rrc17tj8.html" width="800px" height="450px"></iframe>
+                <iframe id="jiekou" name="jiekou" src="https://jx.598110.com/index.php?url=https://www.iqiyi.com/v_19rrc17tj8.html" width="800px" height="450px"></iframe>
             </div>                                                                                  
         </div> 
 
         <div class="stui-pannel_bd col-pd clearfix">
             <ul class="stui-content__playlist playlink clearfix column8" style="max-height: 300px; overflow-y: scroll;">
                 <li class="active">
-                    <a title="影视大全" target="_blank" href="http://vip.lv98.cn/">
+                    <a title="影视大全" target="_blank" href="https://vip.lv98.cn/">
                         影视大全
                     </a>
                 </li>
                 <li>
-                    <a title="每日解析" target="_blank" href="http://www.meiriyixue.cn/jx/">
+                    <a title="每日解析" target="_blank" href="https://www.meiriyixue.cn/jx/">
                         每日解析
                     </a>
                 </li>
                 <li>
-                    <a title="牛噶" target="_blank" href="http://www.niuga.cn/">
+                    <a title="牛噶" target="_blank" href="https://www.niuga.cn/">
                         牛噶
                     </a>
                 </li>
                 <li>
-                    <a title="全网vip" target="_blank" href="http://tv.larmb.com/">
+                    <a title="全网vip" target="_blank" href="https://tv.larmb.com/">
                         全网vip
                     </a>
                 </li>
                 <li>
-                    <a title="全民解析" target="_blank" href="http://www.qmaile.com/">
+                    <a title="全民解析" target="_blank" href="https://www.qmaile.com/">
                         全民解析
                     </a>
                 </li>
@@ -91,27 +92,27 @@
                     </a>
                 </li>
                 <li>
-                    <a title="抖音解析" target="_blank" href="http://douyin.haiya360.com/">
+                    <a title="抖音解析" target="_blank" href="https://douyin.haiya360.com/">
                         抖音解析
                     </a>
                 </li>
                 <li>
-                    <a title="微博秒拍" target="_blank" href="http://weibo.iiilab.com/">
+                    <a title="微博秒拍" target="_blank" href="https://weibo.iiilab.com/">
                         微博秒拍
                     </a>
                 </li>
                 <li>
-                    <a title="微视解析" target="_blank" href="http://weishi.iiilab.com/">
+                    <a title="微视解析" target="_blank" href="https://weishi.iiilab.com/">
                         微视解析
                     </a>
                 </li>
                 <li>
-                    <a title="美拍解析" target="_blank" href="http://meipai.iiilab.com/">
+                    <a title="美拍解析" target="_blank" href="https://meipai.iiilab.com/">
                         美拍解析
                     </a>
                 </li>
                 <li>
-                    <a title="网易云视频" target="_blank" href="http://yunyinyue.iiilab.com/">
+                    <a title="网易云视频" target="_blank" href="https://yunyinyue.iiilab.com/">
                         网易云视频
                     </a>
                 </li>
@@ -121,7 +122,7 @@
                     </a>
                 </li>
                 <li>
-                    <a title="小影解析" target="_blank" href="http://xiaoying.iiilab.com/">
+                    <a title="小影解析" target="_blank" href="https://xiaoying.iiilab.com/">
                         小影解析
                     </a>
                 </li>
@@ -131,7 +132,7 @@
                     </a>
                 </li>
                 <li>
-                    <a title="映客解析" target="_blank" href="http://inke.iiilab.com/">
+                    <a title="映客解析" target="_blank" href="https://inke.iiilab.com/">
                         映客解析
                     </a>
                 </li>
@@ -146,27 +147,27 @@
                     </a>
                 </li>
                 <li>
-                    <a title="行客音乐" target="_blank" href="http://music.runker.net/">
+                    <a title="行客音乐" target="_blank" href="https://music.runker.net/">
                         行客音乐
                     </a>
                 </li>
                 <li>
-                    <a title="音乐下载" target="_blank" href="http://www.66re.cn/vip/163.html" class="game">
+                    <a title="音乐下载" target="_blank" href="https://www.66re.cn/vip/163.html" class="game">
                         音乐下载
                     </a>
                 </li>
                 <li>
-                    <a title="音乐搜索器" target="_blank" href="http://www.guqiankun.com/tools/music/" class="game">
+                    <a title="音乐搜索器" target="_blank" href="https://www.guqiankun.com/tools/music/" class="game">
                         音乐搜索器
                     </a>
                 </li>
                 <li>
-                    <a title="高音质外链" target="_blank" href="http://www.170mv.com/tool/song/" class="game">
+                    <a title="高音质外链" target="_blank" href="https://www.170mv.com/tool/song/" class="game">
                         高音质外链
                     </a>
                 </li>
                 <li>
-                    <a title="5sing解析" target="_blank" href="http://www.guqiankun.com/tools/fivesing">
+                    <a title="5sing解析" target="_blank" href="https://www.guqiankun.com/tools/fivesing">
                         5sing解析
                     </a>
                 </li>
