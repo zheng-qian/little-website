@@ -1,0 +1,161 @@
+<!doctype html> 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>可爱，你点开看一下~ </title>
+    <link type="text/css" rel="stylesheet" href="../css/default.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jscex.min.js"></script>
+    <script type="text/javascript" src="../js/jscex-parser.js"></script>
+	<style type="text/css">
+	#bottom-bar {
+	  background-color: white;
+	  position: fixed;
+	  bottom: 0;
+	  z-index: 3;
+	  display: block;
+	  width: 100%;
+	  height: 60px;
+	  border-top: #dcdef0 1px solid; }
+	  #bottom-bar #app-slogan {
+		font-size: 1em;
+		color: #484b50;
+		top: 50%;
+		position: absolute;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		left: 70px; }
+	  #bottom-bar p {
+		margin-top: 5px;
+		font-size: 12px;
+		color: #99a0a7; }
+	  #bottom-bar a {
+		display: block;
+		/*outline: none;*/
+		border: 1px solid #3d464d;
+		border-radius: 3px;
+		top: 50%;
+		text-align: center;
+		position: absolute;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		font-size: 14px;
+		line-height: 30px;
+		color: #3d464d;
+		width: 86px;
+		height: 30px;
+		right: 20px;
+		text-decoration: none; }
+
+
+		#icon {
+	  left: 15px;
+	  background: url("img/ico.gif") no-repeat;
+	  background-size: 40px auto;
+	  height: 40px;
+	  width: 40px;
+	  position: relative;
+	  top: 50%;
+	  -webkit-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	  border-radius: 8px; }
+		
+	/* body{-webkit-filter: grayscale(100%);} */  /* 黑白 */
+/* 	video#bgvid { 
+
+  position: fixed; right: 0; bottom: 0; 
+  min-width: 100%; min-height: 100%; 
+  width: auto; 
+ height: auto; 
+ z-index: -100; 
+background: url(polina.jpg) no-repeat; 
+  background-size: cover; 
+} */
+	</style>
+	
+</head>
+<body>
+    <!-- 背景音乐部分
+	一个月  100  一年  520   1000  1314   
+     -->
+    <audio id="loveBgm" src="http://music.163.com/song/media/outer/url?id=165340" loop="loop"></audio>  <!-- 把空白去掉 -->
+    
+	<div id="main">
+		<div id="wrap">
+			<div id="text">
+				<div id="code">
+					<span class="say">亲爱滴<span id="name"></span></span><br><br>
+                    <span class="say"><span id="fist-say"></span></span><br>
+                    <span class="say"></span><br><br>
+                    <span class="say">我想在这里对你说</span><br>
+                    <span class="say"> </span><br>
+                    <span class="say"><span class="space"></span><span id="last-say">5&nbsp;&nbsp;&nbsp; 5656 ♪（＾∀＾●）ﾉ</span></span><br><br>
+                    <span class="say space"><span class="space"></span>By  <span id="my-name">56546</span></span>
+				</div>
+			</div>
+			<div id="clock-box">
+				<span style="color:#666666;"><span style="color:#33CC00;">截至今天我们已经</span> 默默走过了</span>
+				<div id="clock"></div>
+			</div>
+			<canvas id="canvas" width="1100" height="680"></canvas>
+		</div>
+	</div>
+	
+    <script charset="UTF-8">
+    
+    function GetQueryString(name)   //获取get参数
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null) 
+            return decodeURI(r[2]); 
+        return null;
+    }
+    
+    $(function(){
+        $("#name").text(GetQueryString("you")); //获取对方的名字
+        $("#fist-say").text(GetQueryString("yi"));  //获取第一句话
+        $("#last-say").text(GetQueryString("wu"));  //获取最终的话
+        $("#my-name").text(GetQueryString("me"));   //获取我的名字
+    })
+		
+	console.log("˶⍤⃝˶ ꒳ᵒ꒳ᵎᵎᵎ     ❆   ˶‾᷄ꈊ‾᷅˵    ꒰⑅•ᴗ•⑅꒱ (•̤̀ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ     (ง ˙o˙)ว   Ծ‸Ծ   ⚆_⚆  (⑉꒦ິ^꒦ິ⑉)   (๑◕ܫ￩๑)b   (๛ᴛ ʏ ᴛ) =͟͟͞͞   (;-_-ᴇᴍᴍᴍฅ    (๑ ̀ㅅ ́๑)ฅ    ᴴᴱᴸᴸᴼ    (๓˙ϖ˙๓)     Σ( ⚆൧⚆)    (๑> ₃ <)   ꒰๑• ̫•๑꒱  ♡(⁼̴̀д⁼̴́)   ଘˊᵕˋଓ    గ .̫ గ   (๑´ㅂ`๑)    三( ᐛ )     ଲଇଉକ    '◡'   •́.•̀  ･ᴗ･  ฅ'ω'ฅ♪    нёιιö   ◍'ㅅ'◍    ´͈ ᵕ `͈   ");	
+    var lover =  {},
+	    year=2020,
+	    yue=5,
+	    ri=5;
+    lover.info = {
+        name: " [仙女点我哦]", //点开时爱心桃旁边的字
+        year: 2020,     //相遇的年份
+        month: 5,      //月
+        day: 4,        //日
+        hour: 0,       //小时
+        minute: 0,     //分钟
+        second: 0,      //秒
+        
+        debug: false,   //是否开启调试模式（如果选是，则会弹窗提示为什么加载出错）
+    }
+    </script>
+	
+    <script type="text/javascript" src="../js/jscex-jit.js"></script>
+    <script type="text/javascript" src="../js/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="../js/jscex-async.min.js"></script>
+    <script type="text/javascript" src="../js/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="../js/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/love.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/canvas.js" charset="utf-8"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a7727c1058f4f3bf30026a96a53ff1e9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+</script>
+</body>
+</html>

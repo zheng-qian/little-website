@@ -1,0 +1,107 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2849",
+      "name": "淘公仔",
+      "font_class": "taogongzi",
+      "unicode": "35ba",
+      "unicode_decimal": 13754
+    },
+    {
+      "icon_id": "15369",
+      "name": "右三角形",
+      "font_class": "yousanjiaoxing",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "338310",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "400303",
+      "name": "菜单",
+      "font_class": "htmal5icon35",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "705669",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "974852",
+      "name": "拍照",
+      "font_class": "paizhao",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "978679",
+      "name": "引号",
+      "font_class": "quotation",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "1032410",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "1356587",
+      "name": "笑脸",
+      "font_class": "xiaolian-",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "1664368",
+      "name": "下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e731",
+      "unicode_decimal": 59185
+    },
+    {
+      "icon_id": "6183151",
+      "name": "搜索",
+      "font_class": "search-line",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "6548531",
+      "name": "二维码",
+      "font_class": "erweima",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "7148955",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "9512487",
+      "name": "左箭头",
+      "font_class": "arrowLeft",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}
